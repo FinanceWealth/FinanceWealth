@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Container from "./components/Container";
-import Header from "./components/Header/Header";
+import Header from "./components/header/Header";
 //import Login from "./components/login/page";
 import { useState } from 'react';
 import DevContainer from './components/devmode/DevContainer';

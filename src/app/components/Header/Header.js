@@ -2,15 +2,16 @@
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { FaGlobe } from "react-icons/fa";
-import { faUser } from '@fortawesome/free-solid-svg-icons'
+import { faUser, faChartLine } from '@fortawesome/free-solid-svg-icons'
 import "../../styles/defaults.scss";
 import "../../styles/header.scss";
 
 const Header = ({mode, id}) => {
   return (
     <header id={id} className="flex static top-0 border-slate-150 items-center px-6 h-6 w-full text-xl font-bold justify-between">
-      <a href="/">
+      <a href="/" id="title">
         <h1 className="text-2xl select-none">
+          <FontAwesomeIcon icon={faChartLine} />
           <span>Finance</span> Wealth
         </h1>
       </a>
@@ -36,7 +37,7 @@ const Header = ({mode, id}) => {
       
       <div>
         <div className="loginContainer cursor-pointer">
-          username
+          <span className="username">Username</span>
           <span className="icon">
             <FontAwesomeIcon icon={faUser} />
           </span>

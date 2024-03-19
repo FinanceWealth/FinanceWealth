@@ -16,6 +16,15 @@ header {
     width: 100%;
     padding: 30px;
     background-color: white;
+
+    h1 {
+        svg {
+            font-size: 1.1em;
+            color: $corPrincipal;
+            margin-right: 6px;
+            transform: translateY(1px);
+        }
+    }
 }
 
 #landingHeader {
@@ -48,18 +57,26 @@ header {
         @include display_flex();
     }
 
+    .language_section {
+        transition: 0.1s ease all;
+    }
+
     .language_section:hover {
         cursor: pointer;
-        transition: 0.1s ease all;
         filter: invert(48%) sepia(77%) saturate(400%) hue-rotate(86deg) brightness(100%);
     }
 
     .create__account {
+        transition: 150ms;
         background-color: $corPrincipal;
         border-radius: 10px;
         padding: 10px;
         font-weight: 500;
         color: white;
+    }
+
+    .create__account:hover {
+        background-color: $corPrincipalSuave;
     }
 
     /* Formatacoes */
@@ -97,8 +114,15 @@ header {
 }
 
 .loginContainer {
-    border: 1px solid red !important;
+    display: flex;
+    align-items: center;
+    gap: 6px;
     width: auto;
+
+    .username {
+        font-weight: 500;
+        font-size: 0.9em;
+    }
 
     .icon {
         padding: 10px 14px;
