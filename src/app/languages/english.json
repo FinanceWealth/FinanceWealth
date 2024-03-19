@@ -1,0 +1,27 @@
+{
+    "language":"en",
+    "LoginSection": {
+            "title":"Sign in",
+            "emailplaceholder":"Your email",
+            "passwordplaceholder":"Your password",
+            "keepLogin":"Remember me",
+            "showPass":"Show password",
+            "createAccount":"Create an account"
+        },
+    "RegisterSection": {
+        "title":"Sign up",
+        "password":"Password",
+        "name":"Full name",
+        "nameplaceholder":"Your name",
+        "emailplaceholder":"Your email",
+        "passwordplaceholder":"Your password",
+        "confirmPassword":"Confirm your password",
+        "submit":"Create account",
+        "identityDocument":"Identity document",
+        "selectDefault":"Select an identity document",
+        "alreadyHaveAccount":"I already have an account"
+    },
+    "Footer": {
+        "trademark":"2024 Project developed by DevSquad"
+    }
+}

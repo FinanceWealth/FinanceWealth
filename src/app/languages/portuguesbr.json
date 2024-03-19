@@ -1,0 +1,27 @@
+{
+    "language":"pt-br",
+    "LoginSection": {
+            "title":"Fazer login",
+            "emailplaceholder":"Seu email",
+            "passwordplaceholder":"Sua senha",
+            "keepLogin":"Manter-se logado",
+            "showPass":"Mostrar senha",
+            "createAccount":"Criar uma conta"
+        },
+    "RegisterSection": {
+        "title":"Cadastrar-se",
+        "password":"Senha",
+        "name":"Nome completo",
+        "nameplaceholder":"Seu nome",
+        "emailplaceholder":"Seu email",
+        "passwordplaceholder":"Sua senha",
+        "confirmPassword":"Confirme sua senha",
+        "submit":"Criar conta",
+        "identityDocument":"Documento de identidade",
+        "selectDefault":"Selecione um documento de identidade",
+        "alreadyHaveAccount":"Já tenho uma conta"
+    },
+    "Footer": {
+        "trademark":"2024 Projeto desenvolvido pela DevSquad"
+    }
+}
