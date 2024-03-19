@@ -6,7 +6,7 @@ import styled, { css } from 'styled-components';
 
 export const metadata = {
   title: "Finance Wealth",
-  description: "App desenvolvido em Next.js, Springboot Web, SQL Server & SCSS",
+  description: "App desenvolvido em Next.js, Springboot Web, SQL Server & TailwindCSS",
   icons: {
     icon: '/fav32.png',
     shortcut: '/fav96.png'
