@@ -1,0 +1,10 @@
+@mixin sessionInput($nomeInput) {
+    .login-#{$nomeInput}, .register-#{$nomeInput}{
+        width: 100%;
+        height: 48px;
+        outline: none;
+        padding: 0 32px;
+    
+        border-bottom: 2px solid $corPrincipal;
+    }
+}

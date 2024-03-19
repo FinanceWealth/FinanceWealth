@@ -1,0 +1,49 @@
+@import 'defaults';
+
+@mixin display_flex() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    padding: 30px;
+}
+
+.header__righside {
+    @include display_flex();
+    height: 40px;
+    
+    li {
+        cursor: pointer;
+        margin: 0 10px;
+    }
+    &__pages {
+        @include display_flex();
+    }
+
+    .language_section:hover {
+        cursor: pointer;
+        transition: 0.1s ease all;
+        filter: invert(48%) sepia(77%) saturate(400%) hue-rotate(86deg) brightness(100%);
+    }
+
+    .create__account {
+        background-color: $corPrincipal;
+        border-radius: 10px;
+        padding: 10px;
+    }
+}
+
+// .Temp {
+//     background-color: yellow;
+//     width: 100px;
+//     height: 100px;
+// }

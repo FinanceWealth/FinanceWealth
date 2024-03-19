@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;0,700;1,200;1,400;1,500;1,700&display=swap');
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+
+/* RESET */
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  color: black;
+  font-family: "Poppins"
+}
+
+.gradiente {
+  background: rgb(255,255,255); /* O fundo precisa ser branco */
+  background: linear-gradient(125deg, rgba(255,255,255,1) 0%, rgba(75,255,78,1) 52%, rgba(0,55,152,1) 100%); /* Gradiente na prática */  
+}
+
+p {
+  color: var(--cor-principal-2); 
+}
+/* =========== */
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}

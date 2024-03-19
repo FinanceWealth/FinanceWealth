@@ -1,0 +1,27 @@
+{
+    "language":"fr",
+    "LoginSection": {
+            "title":"Se connecter",
+            "emailplaceholder":"Adresse e-mail",
+            "passwordplaceholder":"Mot de passe",
+            "keepLogin":"Rester connecté",
+            "showPass":"Montrer le mot de passe",
+            "createAccount":"Créer nouveau compte"
+        },
+    "RegisterSection": {
+        "title":"Rejoignez",
+        "password":"Mot de passe",
+        "name":"Votre nom",
+        "nameplaceholder":"Prénom et nom",
+        "emailplaceholder":"Adresse e-mail",
+        "passwordplaceholder":"Nouveau mot de passe",
+        "confirmPassword":"Confirmer le mot de passe",
+        "submit":"Créer nouveau compte",
+        "identityDocument":"Identity document",
+        "selectDefault":"Document d'identité",
+        "alreadyHaveAccount":"Vous avez déjà un compte?"
+    },
+    "Footer": {
+        "trademark":"2024 Projet développé par DevSquad"
+    }
+}

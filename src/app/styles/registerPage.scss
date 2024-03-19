@@ -1,0 +1,30 @@
+@import 'loginPage.scss';
+@import 'defaults.scss';
+
+#inputBox {
+    gap: 20px;
+}
+
+.inputContainer {
+    position: relative;
+    /* border: 1px solid red; */
+
+    label {
+        position: relative;
+        top: 8px;
+    }
+}
+
+input[type=text], input[type=email], input[type=password], .userInput {
+    padding: 0 6px;
+}
+
+.inputContainer {
+    height: auto;
+}
+
+.registerSelect {
+    border: 2px solid $corPrincipal;
+    border-radius: 3px;
+    width: 142px;
+}
