@@ -14,7 +14,7 @@ export default function Parallax() {
             scrollTrigger: {
                 trigger: parallaxRef.current,
                 start: "top top",
-                end: "5000 bottom",
+                end: "2000 bottom",
                 scrub: true,
                 pin: true,
                 onUpdate: (self) => {
@@ -25,29 +25,29 @@ export default function Parallax() {
         tl.to(
           montanha3.current,
           {
-              y: "-=80",
+              y: "-=70",
           },
           0
       );
       tl.to(
         montanha2.current,
           {
-              y: "-=30",
+              y: "-=20",
           },
           0
       );
       tl.to(
         montanha1.current,
           {
-              y: "+=50",
+              y: "+=5",
           },
           0
       );
       tl.to(
         copy.current,
         {
-            y: "2600%",
-            opacity: 1
+            y: "0%",
+            opacity: 0
         },
         0
       );
@@ -65,15 +65,17 @@ export default function Parallax() {
 
   // style={{ background: `linear-gradient(#069e2d, #03440c ${background}%, #058e3f, #005c02 )` }} 
   return (
-    <div className="parallax-outer">
-      <div ref={parallaxRef} className="parallax" >
+
+    <div className="parallax-outer" >
+      <div ref={parallaxRef} className="parallax " >
         <img ref={montanha3} className="montanha-3" src="../images/parallax/Camada2.png"/>
         <img ref={montanha2} className="montanha-2" src="/images/parallax/Camada1.png" />
         <img ref={montanha1} className="montanha-1" src="/images/parallax/Background.png" alt="ODE"/>
       </div>
       <div ref={copy} className="copy">
         <h1>Finance Wealth</h1>
-        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, quos?</span>
+        <span>No Finance Wealth, acreditamos que a liberdade financeira é o alicerce para uma vida plena e próspera. Nosso compromisso é fornecer insights valiosos, ferramentas inovadoras e orientação especializada para ajudá-lo a tomar decisões financeiras inteligentes e alcançar seus objetivos.</span>
+        <button className="copy__button"><a href="./pages/register">Inscrever-se</a></button>
       </div>
     </div>
   )}

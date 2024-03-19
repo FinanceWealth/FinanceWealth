@@ -15,9 +15,28 @@
 header {
     width: 100%;
     padding: 30px;
+    background-color: white;
 }
 
-.header__righside {
+#landingHeader {
+    position: absolute !important;
+    top: 0 !important;
+    z-index: 100;
+
+    /* .headerBackground {
+        position: absolute;
+        padding: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        z-index: 2;
+        opacity: 0.3;
+    } */
+}
+
+/* Landing page */
+.header__rightside {
     @include display_flex();
     height: 40px;
     
@@ -39,6 +58,30 @@ header {
         background-color: $corPrincipal;
         border-radius: 10px;
         padding: 10px;
+        font-weight: 500;
+        color: white;
+    }
+
+    /* Formatacoes */
+    .header__rightside__pages {
+        font-weight: 300;
+        font-size: 0.86em;
+
+        .option {
+            height: 100%;
+            padding: 6px;
+        }
+
+        .option:hover {
+            color: green;
+            font-weight: 500;
+            border-bottom: 2px solid green;
+        }
+
+        .login {
+            font-weight: 500;
+            color: green;
+        }
     }
 }
 
@@ -47,3 +90,21 @@ header {
 //     width: 100px;
 //     height: 100px;
 // }
+
+/* Logged user */
+#loggedHeader {
+    box-shadow: 0px 0px 18px -8px rgba(0,0,0,0.45);
+}
+
+.loginContainer {
+    border: 1px solid red !important;
+    width: auto;
+
+    .icon {
+        padding: 10px 14px;
+        border-radius: 50px;
+        background-color: $corPrincipal;
+        color: white;
+        font-size: 1.2em;
+    }
+}
